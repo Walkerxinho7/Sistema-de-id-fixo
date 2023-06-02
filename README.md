@@ -4,6 +4,6 @@ problema resolvido vocês podem utilizar esse, dentro do arquivo zip tem o "READ
 leia ele vai te ajudar a entender e adaptar o sistema no seu gamemode, caso voce for
 repostar esse sistema peço somente que deixe meu créditos nada mais.
 
-* Leia o arquivo "README.md" que está dentro do arquivo .zip pode te ajudar.
+* Leia o arquivo "Leia Aqui.txt" pode te ajudar.
 
 Atenciosamente, Walkerxinho7
