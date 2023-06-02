@@ -1,0 +1,63 @@
+Olá novamente, bom gente esse é um sistema de id fixo criado por mim
+é um sistema bem básico porém muita gente procura por ele na net e
+acaba não achando, então estou disponibilizando esse aqui para vocês.
+
+Siga algumas instruções abaixo:
+
+No arquivo id fixo.cpp ira ter a stock "Criar_userid" recomendo que vocês
+adapte para que assim que o player se registra no seu servidor seja criado
+o id dele, a outra stock "Criarid" ela vai servir pra quando um id de algum
+player for criado, no arquivo "Quantidade_Userid.cfg" vai adicionar +1
+ou seja cada player terá seu ID começa do 1 e assim vai, no "SetPlayerId"
+caso vocês já tiverem um sistema de verificar as bubbles que o player tem
+você adapta a info do id do player, Exemplo abaixo.
+
+Funcao::VerificaTitulos(playerid)
+{
+    new string[40];
+    if(IsPlayerConnected(playerid)
+    {
+        if(JogadorInfo[playerid][titulo] == 1)
+        {
+            format(string, sizeof(string), "%s\n%d", Titulo, JogadorInfo[playerid][user_id]);
+            SetPlayerChatBubble(playerid, string, -1, 45.0, 10000);
+        }
+    }
+}
+
+Mas caso seu servidor ainda não tenha um desses é só voce adicionar o
+"SetPlayerId" no OnPlayerSpawn ou então alguma callback que você use
+para o player nascer no spawn.
+
+Você ira usar assim, SetTimerEx("SetPlayerId", 5000, true, "d", playerid);
+para que assim a bubble do id fixo não suma nunca da cabeça do player.
+
+Caso vocês também queiram usar esse id fixo para comandos vocês iram
+utilizar assim como está no exemplo abaixo. Esse código também está
+no arquivo "id fixo.cpp".
+
+CMD:pagar(playerid, params[])
+{
+    new ID, money;
+    if(sscanf(params, "im", ID, money)) return SendClientMessage(playerid, -1, "Erro: Use /pagar [ ID ] [ Valor ]");
+	for(new i = 0; i < MAX_PLAYERS; i++)
+	{
+		if(JogadorInfo[i][user_id] == ID)
+		{
+		    //COD
+		}
+	}
+	SendClientMessage(playerid, 0xB4B5B7FF, "ID Invalido.");
+	return 1;
+}
+
+Não esqueçam de adicionar o "ShowNameTags(0);" na public OnGamemodeInit.
+
+Lembrando que o ProxDetector ele não faz parte do id fixo ele só vai servir
+para o OnPlayerText, você pode definir que só quem tiver dentro de um raio
+de 15 ou mais metros vai poder ver a mensagem escrevida pelo player usem
+o mesmo exemplo que eu deixei la caso for usar o id fixo no chat.
+
+
+Atenciosamente, Walkerxinho7
+Discord, Walkerxinho7#9124 caso precise de ajuda
