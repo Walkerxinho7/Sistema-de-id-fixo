@@ -4,6 +4,6 @@ problema resolvido vocês podem utilizar esse, tem o "Leia Aqui.txt" leia ele va
 ajudar a entender e adaptar o sistema no seu gamemode, caso voce for repostar esse
 sistema peço somente que deixe meu créditos nada mais.
 
-* Leia o arquivo "Leia Aqui.txt" pode te ajudar.
+* Leia o arquivo "Leia.txt" pode te ajudar.
 
 Atenciosamente, Walkerxinho7
