@@ -1,4 +1,4 @@
-/* Leia o arquivo README.md para entender melhor e saber mais coisas
+/* Leia o arquivo "Leia.txt" para entender melhor e saber mais coisas
 sobre o sistema. */
 
 #include "a_samp.inc"
