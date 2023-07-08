@@ -42,7 +42,7 @@ stock Criarid()
 Funcao::SetPlayerId(playerid)
 {
 	new stringid[7];
-	format(stringid, 5, "%d", JogadorInfo[playerid][user_id]);
+	format(stringid, 5, "ID: %d", JogadorInfo[playerid][user_id]);
 	SetPlayerChatBubble(playerid, stringid, -1, 16.0, 7000);
 	return 1;
 }
